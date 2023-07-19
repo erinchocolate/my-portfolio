@@ -1,0 +1,11 @@
+Model Information:
+* title:	Some geeks room
+* source:	https://sketchfab.com/3d-models/some-geeks-room-4b60663ad670402ea8d1e0544b3b4114
+* author:	SyedAfiq (https://sketchfab.com/SyedAfiq)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Some geeks room" (https://sketchfab.com/3d-models/some-geeks-room-4b60663ad670402ea8d1e0544b3b4114) by SyedAfiq (https://sketchfab.com/SyedAfiq) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
