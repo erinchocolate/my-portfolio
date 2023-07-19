@@ -91,9 +91,9 @@ const technologies = [
 const experiences = [
   {
     title: "Intern Analyst Developer",
-    company_name: "FNZ",
+    company_name: "FNZ Limited",
     icon: fnz,
-    iconBg: "#383E56",
+    iconBg: "#fff",
     date: "April 2023 - July 2023",
     points: [
       "Identified and addressed platform defects to support platform releases in a tight timeline by analysing smoke and regression test results, communicating with relevant stakeholders and updating automated tests using Selenium, SpecFlow, Ms SQL server, Azure DevOps, and TeamCity.",
@@ -103,9 +103,9 @@ const experiences = [
   },
   {
     title: "Co-founder",
-    company_name: "Lead Miner",
+    company_name: "Lead Miner Limited",
     icon: leadminer,
-    iconBg: "#E6DEDD",
+    iconBg: "#fff",
     date: "Oct 2018 - March 2022",
     points: [
       "Collaborated with the business partner to grow our client base from 0 to 15, including two overseas clients, by conducting market research, actively listening to client needs, and communicating the value and relevance of our offerings.",
