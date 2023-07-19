@@ -1,19 +1,6 @@
 import {
-  javascript,
-  typescript,
-  html,
-  css,
-  reactjs,
-  redux,
-  tailwind,
-  nodejs,
-  mongodb,
-  git,
-  figma,
-  docker,
   fnz,
   leadminer,
-  threejs,
   password,
   tweet,
 } from "../assets";
@@ -30,61 +17,6 @@ export const navLinks = [
   {
     id: "contact",
     title: "Contact",
-  },
-];
-
-const technologies = [
-  {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
   },
 ];
 
@@ -119,16 +51,16 @@ const experiences = [
 
 const projects = [
   {
-    name: "Meiqiao's Digital Space",
+    name: "Meiqiao's Digital Home",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "My personal portfolio website that showcases my projects and experiences.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "threejs",
         color: "green-text-gradient",
       },
       {
@@ -137,12 +69,12 @@ const projects = [
       },
     ],
     image: password,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/erinchocolate/my-portfolio",
   },
   {
     name: "MSWDev tweet", 
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "A full stack web app for Master of Software Development program students to share feedback and suggestions for the program and courses.",
     tags: [
       {
         name: "react",
@@ -153,34 +85,46 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "css",
         color: "pink-text-gradient",
+      },
+      {
+        name: "supabase",
+        color: "orange-text-gradient",
       },
     ],
     image: tweet,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/erinchocolate/mswdev-tweet",
   },
   {
     name: "Password Rocket",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A full stack web app for users to generate random passwords based on their length and conditions choice. Users can also sign up and log in with their accounts to update or delete the password they already saved.",
     tags: [
       {
-        name: "nextjs",
+        name: "JavaScript",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "laravel",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "mysql",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "tailwind",
         color: "pink-text-gradient",
+      },
+      {
+        name: "AWS Beanstalk & RDS",
+        color: "orange-text-gradient",
       },
     ],
     image: password,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/erinchocolate/password-rocket",
   },
 ];
 
-export {technologies, experiences, projects };
+export {experiences, projects};
