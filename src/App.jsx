@@ -5,6 +5,7 @@ import {
   Experience,
   Hero,
   Navbar,
+  About,
   Project,
   StarsCanvas,
 } from "./components";
@@ -16,6 +17,7 @@ const App = () => {
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
           <Navbar />
           <Hero />
+          <About />
         </div>
         <Project />
         <Experience />

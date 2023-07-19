@@ -60,16 +60,10 @@ const Project = () => {
     <>
       <motion.div variants={textVariant}>
         <p className={styles.sectionSubText}>What I have built </p>
-        <h2 className={styles.sectionHeadText}>Projects.</h2>
+        <h3 className={styles.sectionHeadText}>Projects.</h3>
       </motion.div>
 
       <div className="w-full flex flex-col">
-        <motion.p
-          variants={fadeIn("", "", 0.1, 1)}
-          className="mt-3 flex text-secondary text-[16px] max-w-3xl leading-[30px]"
-        >
-          Each project is briefly described with a link to the source code and live demos in it. It reflects my ability to solve problems, learn new technologies and build stuff from scratch.
-        </motion.p>
         
         <div className='mt-20 flex flex-wrap gap-7'>
           {projects.map((project, index) => (
