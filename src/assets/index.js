@@ -1,4 +1,6 @@
 import github from "./github.png";
+import linkedin from "./linkedin.png";
+import email from "./email.png";
 
 //Navbar
 import menu from "./menu.svg";
@@ -6,31 +8,40 @@ import close from "./close.svg";
 import logo from "./logo.png";
 
 //Skill
-import css from "./tech/css.png";
-import docker from "./tech/docker.png";
-import figma from "./tech/figma.png";
-import git from "./tech/git.png";
-import html from "./tech/html.png";
+
+//Language
 import javascript from "./tech/javascript.png";
-import mongodb from "./tech/mongodb.png";
-import nodejs from "./tech/nodejs.png";
+import java from "./tech/java.png";
+import python from "./tech/python.png";
+import csharp from "./tech/csharp.png";
+import html from "./tech/html.png";
+import css from "./tech/css.png";
+import sql from "./tech/sql.png";
+
+//Framework
 import reactjs from "./tech/reactjs.png";
-import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
-import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+
+//Tool
+import docker from "./tech/docker.png";
+import git from "./tech/git.png";
+import nodejs from "./tech/nodejs.png";
 
 //Company
 import fnz from "./company/fnz.png";
 import leadminer from "./company/leadminer.svg";
 
 //Project
+
 import password from "./project/password.gif";
 import tweet from "./project/tweet.gif";
 
 export {
   logo,
   github,
+  email,
+  linkedin,
   menu,
   close,
   fnz,
@@ -38,16 +49,16 @@ export {
   password,
   tweet,
   css,
+  csharp,
+  java,
+  python,
   docker,
-  figma,
   git,
   html,
   javascript,
-  mongodb,
   nodejs,
   reactjs,
-  redux,
   tailwind,
-  typescript,
   threejs,
+  sql,
 };

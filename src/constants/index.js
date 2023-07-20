@@ -1,24 +1,27 @@
 import {
+  github,
+  linkedin,
+  email,
   javascript,
-  typescript,
+  java,
+  python,
+  csharp,
   html,
   css,
   reactjs,
-  redux,
   tailwind,
   nodejs,
   threejs,
-  mongodb,
   git,
-  figma,
   docker,
+  sql,
   fnz,
   leadminer,
   password,
   tweet,
 } from "../assets";
 
-export const navLinks = [
+const navLinks = [
   {
     id: "experience",
     title: "Experience",
@@ -33,13 +36,31 @@ export const navLinks = [
   },
 ];
 
+const contacts = [
+  {
+    name: "Github",
+    icon: github,
+    link: "https://github.com/erinchocolate",
+  },
+  {
+    name: "Linkedin",
+    icon: linkedin,
+    link: "https://www.linkedin.com/in/meiqiaochen/",
+  },
+  {
+    name: "Email",
+    icon: email,
+    link: "mailto:me@meiqiaochen.co.nz",
+  },
+]
+
 const skills = [
   {
-    name: "HTML 5",
+    name: "HTML",
     icon: html,
   },
   {
-    name: "CSS 3",
+    name: "CSS",
     icon: css,
   },
   {
@@ -47,16 +68,24 @@ const skills = [
     icon: javascript,
   },
   {
-    name: "TypeScript",
-    icon: typescript,
+    name: "Java",
+    icon: java,
+  },
+  {
+    name: "Python",
+    icon: python,
+  },
+  {
+    name: "C#",
+    icon: csharp,
+  },
+  {
+    name: "SQL",
+    icon: sql,
   },
   {
     name: "React JS",
     icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
   },
   {
     name: "Tailwind CSS",
@@ -67,26 +96,23 @@ const skills = [
     icon: nodejs,
   },
   {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "git",
+    name: "Git",
     icon: git,
   },
   {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
+    name: "Docker",
     icon: docker,
   },
 ]
+
+const about = {
+  points: [
+    "I took a sharp turn from marketing, where the only bugs I dealt with were the ones in my soup, to the world of software development, where the bugs are definitely more fun to deal with!",
+    "My previous experience as a marketer and business owner was a wild ride, and it taught me some valuable lessons. I honed my skills in communication, collaboration, and learning on the fly. I also learned to roll with the punches and bounce back from setbacks like a champion.",
+    "After countless hours of googling and debugging, I taught myself to be a polyglot - Java, Python, and JavaScript - and picked up various front and backend frameworks. Technical part aside, I also learned how to code with others in an Agile way, which feels like part of a circus - lots of moving parts and fun!",
+    "I recently graduated from the master of software development program at the Victoria University of Wellington, now I am ready to make magic happen... or at least some functional code:)",
+  ]
+};
 
 const experiences = [
   {
@@ -96,9 +122,10 @@ const experiences = [
     iconBg: "#fff",
     date: "April 2023 - July 2023",
     points: [
-      "Identified and addressed platform defects to support platform releases in a tight timeline by analysing smoke and regression test results, communicating with relevant stakeholders and updating automated tests using Selenium, SpecFlow, Ms SQL server, Azure DevOps, and TeamCity.",
-      "Improved and enhanced one of the most complex automated suites of the platform, making the tests reliable enough to be added to the regular smoke and regression test pack, resulting in a reduction of over 3 hours in daily manual testing time.",
-      "Planned and executed a testing data setup strategy to generate valid data for 42 automated tests within three weeks after the environment restoration and created documentation detailing each process step and highlighting key considerations for future setups.",
+      "Facilitated the launch of three major platform releases by maintaining and updating automated tests using Selenium, SpecFlow, Ms SQL server, Azure DevOps, and TeamCity.",
+      "Revamped the platform's most intricate automated test suite and improved its reliability to the point where we can add these tests to the regular smoke and regression pack, resulting in over 3 hours reduction in daily manual testing time.",
+      "Planned and executed a new testing data setup strategy, generating valid data for 42 automated tests within three weeks following the environment restoration. This setup decreased test failures directly attributed to data issues.",
+      "Created documentation for test investigations, Jira use cases and commonly used SQL queries, reducing onboarding time for new team members.",
     ],
   },
   {
@@ -109,9 +136,9 @@ const experiences = [
     date: "Oct 2018 - March 2022",
     points: [
       "Collaborated with the business partner to grow our client base from 0 to 15, including two overseas clients.",
-      "Communicated with clients unfamiliar with social media marketing to guide them through a new method of working with our leads, resulting in their adoption and 10% conversion rates.",
-      "Analysed client feedback to improve our marketing funnels, bringing a 15% increase in sales for clients.",
-      "Designed, implemented and tested the new marketing funnels featuring multiple landing pages, SMS verification, location search, email automation and custom CRM system to adapt to the changing market conditions during the COVID lockdown.",
+      "Communicated with clients unfamiliar with social media marketing to guide them through a new method of working with our leads, resulting in their adoption and increased sales directly attributed to our leads.",
+      "Created ad campaigns that reach and resonate with the target audience, achieving consistent 4% click-through rates for ads and 10% conversion rates on leads.",
+      "Designed, implemented and tested the new marketing funnels featuring multiple landing pages, SMS verification, location search, automated emails and custom CRM system to adapt to the changing market conditions during the COVID lockdown.",
     ],
   },
 ];
@@ -123,15 +150,15 @@ const projects = [
       "My personal portfolio website that showcases my projects and experiences with 3D model and animation. Vistors can also leave a message for me.",
     tags: [
       {
-        name: "react",
+        name: "React",
         color: "blue-text-gradient",
       },
       {
-        name: "threejs",
+        name: "Threejs",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "Tailwind CSS",
         color: "pink-text-gradient",
       },
     ],
@@ -144,19 +171,19 @@ const projects = [
       "A web app for Master of Software Development students to share feedbacks and suggestions to the program. Students can upvote or downvote posts",
     tags: [
       {
-        name: "react",
+        name: "React",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "Rest Api",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "CSS",
         color: "pink-text-gradient",
       },
       {
-        name: "supabase",
+        name: "Supabase",
         color: "orange-text-gradient",
       },
     ],
@@ -173,15 +200,15 @@ const projects = [
         color: "blue-text-gradient",
       },
       {
-        name: "laravel",
+        name: "Laravel",
         color: "pink-text-gradient",
       },
       {
-        name: "mysql",
+        name: "Mysql",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "Tailwind CSS",
         color: "pink-text-gradient",
       },
     ],
@@ -190,4 +217,4 @@ const projects = [
   },
 ];
 
-export {skills, experiences, projects};
+export {navLinks, skills, experiences, projects, contacts, about};

@@ -5,7 +5,7 @@ import { OrbitControls, Preload, useGLTF, Float } from "@react-three/drei";
 import CanvasLoader from "../Loader";
 
 const Fox = () => {
-  const earth = useGLTF("./fox/scene.gltf");
+  const fox = useGLTF("./fox/scene.gltf");
 
   return (
     <Float speed={1} rotationIntensity={1} floatIntensity={2}>
@@ -20,7 +20,7 @@ const Fox = () => {
           castShadow
           shadow-mapSize={1024}
         />
-        <primitive object={earth.scene} scale={0.5}/>
+        <primitive object={fox.scene} scale={0.5}/>
       </mesh>
     </Float>
   );
@@ -35,7 +35,7 @@ const FoxCanvas = () => {
         position: [2, 3, 5],
         fov: 45,
         near: 0.1,
-        far:200,
+        far:100,
       }}
       gl={{ preserveDrawingBuffer: true }}
     >
