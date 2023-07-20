@@ -2,9 +2,9 @@ import { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { styles } from "../styles";
-import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+import {FoxCanvas} from "./canvas"
 
 const Contact = () => {
   const formRef = useRef();
@@ -15,8 +15,39 @@ const Contact = () => {
   });
   const [loading, setLoading] = useState(false);
 
-  const handleChange = (e) => {};
-  const handleSubmit = (e) => {};
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setForm({...form, [name]: value})
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    emailjs.send('service_3apbti3', 'template_m120fcf', {
+      from_name: form.name,
+      to_name: 'Meiqiao',
+      from_email: form.email,
+      to_email: 'chenmeiqiao940926@gmail.com',
+      message: form.message,
+    },
+      'AWthbpBx5YoeRIupP'
+    ).then((result) => {
+      setLoading(false);
+      alert('Thank you for your message, I will get back to you later!');
+      setForm({
+        name: "",
+        email: "",
+        message: "",
+      });
+    }, (error) => {
+      setLoading(false)
+      
+      console.log(error);
+
+      alert('Sorry, something went wrong, please try again later!')
+    });
+  };
 
   return (
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
@@ -80,8 +111,10 @@ const Contact = () => {
       </motion.div>
 
       <motion.div
-      variants={slideIn("right", "tween", 0.2, 1)}>
-
+        variants={slideIn("right", "tween", 0.2, 1)}
+        className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
+      >
+        <FoxCanvas/>
       </motion.div>
     </div>
   );
