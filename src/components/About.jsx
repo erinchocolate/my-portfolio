@@ -15,6 +15,7 @@ const About = () => {
       <div className="w-full flex flex-col gap-5">
         {about.points.map((point) => (
           <motion.p
+            key={point}
             variants={fadeIn("", "", 0.1, 1)}
             className="mt-3 flex text-secondary text-[16px] max-w-3xl leading-[30px]"
           >
