@@ -17,6 +17,7 @@ import {
   sql,
   fnz,
   leadminer,
+  portfolio,
   password,
   tweet,
 } from "../assets";
@@ -162,7 +163,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: password,
+    image: portfolio,
     source_code_link: "https://github.com/erinchocolate/my-portfolio",
   },
   {

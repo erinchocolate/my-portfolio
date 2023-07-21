@@ -33,7 +33,7 @@ import fnz from "./company/fnz.png";
 import leadminer from "./company/leadminer.svg";
 
 //Project
-
+import portfolio from "./project/portfolio.gif";
 import password from "./project/password.gif";
 import tweet from "./project/tweet.gif";
 
@@ -46,6 +46,7 @@ export {
   close,
   fnz,
   leadminer,
+  portfolio,
   password,
   tweet,
   css,
