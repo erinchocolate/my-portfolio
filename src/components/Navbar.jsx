@@ -1,12 +1,16 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { Link } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
 
 const Navbar = () => {
+  const ref = useRef(null);
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
+
+  const scrollToSection = () => {};
 
   return (
     <nav
@@ -37,7 +41,16 @@ const Navbar = () => {
               font-medium cursor-pointer`}
               onClick={() => setActive(link.title)}
             >
-              <a href={`#${link.id}`}>{link.title}</a>
+              <ScrollLink
+                to={link.id}
+                smooth={true}
+                duration={500}
+                spy={true}
+                offset={-70}
+                onClick={() => scrollToSection(link.id)}
+              >
+                {link.title}
+              </ScrollLink>
             </li>
           ))}
         </ul>

@@ -1,5 +1,6 @@
 import Tilt from 'react-parallax-tilt'
 import { motion } from 'framer-motion'
+import { Element } from 'react-scroll'
 import { styles } from '../styles'
 import { github } from '../assets'
 import { SectionWrapper } from '../hoc'
@@ -56,7 +57,7 @@ const ProjectCard = ({index, name, description, tags, image, source_code_link}) 
 
 const Project = () => {
   return (
-    <>
+    <Element name="project">
       <motion.div variants={textVariant}>
         <p className={styles.sectionSubText}>What I have built </p>
         <h3 className={styles.sectionHeadText}>Projects.</h3>
@@ -72,7 +73,7 @@ const Project = () => {
           ))}
         </div>
       </div>
-    </>
+    </Element>
     
   )
 }

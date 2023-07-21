@@ -4,6 +4,7 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import { motion } from "framer-motion";
+import { Element } from "react-scroll";
 import "react-vertical-timeline-component/style.min.css";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
@@ -44,7 +45,7 @@ const ExperienceCard = ({ experience }) => (
 
 const Experience = () => {
   return (
-    <>
+    <Element name="experience">
       <motion.div variants={textVariant}>
         <p className={styles.sectionSubText}>What I have done  </p>
         <h3 className={styles.sectionHeadText}>Work Experience.</h3>
@@ -59,7 +60,7 @@ const Experience = () => {
           ))}
         </VerticalTimeline>
       </div>
-    </>
+    </Element>
   );
 };
 
