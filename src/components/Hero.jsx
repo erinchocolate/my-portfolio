@@ -13,15 +13,11 @@ const Hero = () => {
 
   const fetchCount = async () => {
     try {
-      const res = await fetch(
-        apiUrl,
-        {
-          method: "POST",
-          body: JSON.stringify({ user: "meiqiao" }),
-        }
-      );
+      const res = await fetch(apiUrl, {
+        method: "POST",
+        body: JSON.stringify({ user: "meiqiao" }),
+      });
       const data = await res.json();
-      console.log(data);
       setCount(data.message);
     } catch (err) {
       console.log(err);
@@ -42,7 +38,10 @@ const Hero = () => {
             Welcome to my digital home
           </p>
           <p className={"text-lg mt-2 text-white-100"}>
-            <span className="text-[#915eff] text-xl font-semibold">{count}</span> visits to my home so far:)
+            <span className="text-[#915eff] text-xl font-semibold">
+              {count}
+            </span>{" "}
+            visits to my home so far:)
           </p>
         </div>
       </div>

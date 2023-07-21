@@ -40,12 +40,14 @@ const Navbar = () => {
               }
               hover:text-white text-[18px]
               font-medium cursor-pointer`}
-              onClick={() => setActive(link.title)}
+              onClick={() => {
+                setActive(link.title)
+              }}
             >
               <ScrollLink
                 to={link.id}
                 smooth={true}
-                duration={500}
+                duration={800}
                 spy={true}
                 offset={-70}
                 onClick={() => scrollToSection(link.id)}
