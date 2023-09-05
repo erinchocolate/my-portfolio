@@ -52,7 +52,7 @@ I downloaded free 3D models from this website:
 
 Below is a 3D room where users can rotate it on my website:
 
-![Room.gif](https://prod-files-secure.s3.us-west-2.amazonaws.com/b6693b30-64e0-4ee1-a370-b4803aa09a05/1b72a979-5d2c-4b49-ab8d-f0733d655131/Room.gif)
+![Room.gif](https://github.com/erinchocolate/my-portfolio/blob/main/gif/Room.gif)
 
 To achieve this,  First, we can create a `RoomCanvas` component, which is responsible for encapsulating the `Room` within a 3D canvas
 
@@ -120,7 +120,7 @@ const Room = ({isMobile}) => {
 
 I used a similar method to add the fox model, but I added `Float` to make the fox move:
 
-![fox.gif](https://prod-files-secure.s3.us-west-2.amazonaws.com/b6693b30-64e0-4ee1-a370-b4803aa09a05/b3e05ed4-42af-4b9f-a9c2-5a6620dabc3c/fox.gif)
+![fox.gif](https://github.com/erinchocolate/my-portfolio/blob/main/gif/fox.gif)
 
 ```jsx
 <Float speed={1} rotationIntensity={1} floatIntensity={2}>
